@@ -327,3 +327,20 @@ display: block;
   color: #27bcda;
 }
 
+@media (max-width: 576px) {
+    section {
+        padding: 75px 5%; 
+    }
+    .footer-content{
+        margin : 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        text-align: center;
+    }
+    
+    
+}
+

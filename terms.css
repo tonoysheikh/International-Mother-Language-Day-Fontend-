@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     width: 100%;
@@ -28,52 +29,54 @@ a{
 a:hover{
    color: rgb(119, 225, 27);
 }
-
-.Home{
-    width: 100%;
-    background-image: url("./img/web.jpg") !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 80vh;   
+.body1{
     
+    margin: 30px;
 }
+.body2{
+    text-align: center;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+}
+.body2 h1{
+    margin: 30px;
+}
+.body {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+.body h2 , h3{
+    font-weight: bold;
 
-.para{
-    padding-top: 70vh;
-    color: azure;
-    line-height: 25px;
-    letter-spacing: 4px;
-    font-variant: small-caps; 
+}
+.writing{
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
 }
-
-.pera {
-    text-align: center;
+.condition{
     margin-top: 25px;
-    margin-bottom: 15px;
-    margin: 10px;
+    margin-left: 15%;
+    margin-right: 20%;
 }
-.pera h2{
-    margin-bottom: 35px;
-    margin-top: 25px;
+.wrapper {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-gap: 10px;
+    color: #444;
+    justify-content: space-between;
+}
+  
+.box {
+    color: black;
+    margin-top: 30px;
+}
+.box h5{
     font-weight: bolder;
 }
-
-
-table,th,td{
-    border: 1px solid black;
-    text-align: center;
-    margin-left: 25%;
-    letter-spacing: 3px;
-
-}
-table{
-    width:50%;
-    border-collapse: collapse;
-}
-th,td{
-    padding: 20px;
+.box li a{
+    color: black !important;
 }
 
 footer{
@@ -84,7 +87,6 @@ footer{
     background: #212529;
     height: auto;
     width: 100vw;
-
     padding-top: 40px;
     color: #fff;
 }
@@ -145,7 +147,7 @@ footer{
     text-align: center;
 }
 .footer-bottom p{
-     float: left;
+    float: left;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
@@ -178,10 +180,10 @@ display: block;
 .footer-menu ul li a:hover{
   color: #27bcda;
 }
-
 @media (max-width: 576px) {
     section {
-        padding: 75px 5%; 
+        padding: 10px 5%; 
+        margin : 0;
     }
     .footer-content p{
         margin-left: 10%;
@@ -189,6 +191,24 @@ display: block;
         line-height: 28px;
         font-size: 14px;
         color: #cacdd2;
+    }
+    .condition{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .wrapper {
+        color: #444;
+        display: inline-block;
+    }
+      
+    .box {
+        color: black;
+    }
+    .box h5{
+        font-weight: bolder;
+    }
+    .box li a{
+        color: black !important;
     }
     
 }
