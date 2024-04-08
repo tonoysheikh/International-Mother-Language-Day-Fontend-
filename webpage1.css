@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    padding: 0;  
+    padding: 0; 
+    font-family: 'Poppins', sans-serif; 
 }
 body{
     width: 100%;
@@ -23,7 +24,7 @@ body{
 a{
     text-decoration: none;
     padding: 20px;
-    color: white;
+    color: white !important;
 }
 a:hover{
    color: rgb(119, 225, 27);
@@ -137,13 +138,6 @@ footer{
     color: aqua;
 }
 
-.footer-bottom{
-    background: #18191a;
-    width: 100vw;
-    padding: 20px;
-    padding-bottom: 40px;
-    text-align: center;
-}
 .footer-bottom p{
      float: left;
     font-size: 14px;
@@ -178,6 +172,15 @@ display: block;
 .footer-menu ul li a:hover{
   color: #27bcda;
 }
+.navbar-toggler{
+    background-color: white !important;
+    color: white;
+}
+.footer-bottom{
+    background: #18191a;
+    width: 100%;
+    text-align: center;
+}
 
 @media (max-width: 576px) {
     section {
@@ -189,6 +192,35 @@ display: block;
         line-height: 28px;
         font-size: 14px;
         color: #cacdd2;
+    }
+    .Home{
+        width: 100%;
+        background-image: url("./img/web.jpg") !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto;   
+        
+    }
+    .schedule{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    table,th,td{
+        border: 1px solid black;
+        text-align: center;
+        margin-left: 5%;
+
+    }
+    table{
+        width:50%;
+        border-collapse: collapse;
+    }
+    th,td{
+        padding: 5px;
     }
     
 }

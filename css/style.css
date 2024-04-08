@@ -12,8 +12,6 @@ body{
     height:auto;
     background-color: aqua;
 }
-
-
 #logo{
     width: 100px;
     height: 70px;
@@ -30,7 +28,7 @@ body{
 a{
     text-decoration: none;
     padding: 20px;
-    color: white;
+    color: white !important;
 }
 a:hover{
    color: rgb(119, 225, 27);
@@ -48,10 +46,15 @@ a:hover{
     margin: 30px;
 }
 
-section{
+.section{
     padding: 75px 16.7%;
 
 }
+.navbar-toggler{
+    background-color: white !important;
+    color: white;
+}
+
 .Home{
     width: 100%;
     background-image: url("./font\ banner1.jpg") !important;
@@ -60,6 +63,11 @@ section{
     background-position: center;
     height: 80vh;   
     
+}
+.navbar-toggler-icon{
+    margin : 0 !important;
+    height: 30px;
+    width: 30px;
 }
 span{
     font-size: 35px;
@@ -225,14 +233,13 @@ span{
 }
 
 footer{
-    
+    margin-top: 20px;
     bottom: 0;
     left: 0;
     right: 0;
     background: #212529;
     height: auto;
     width: 100vw;
-
     padding-top: 40px;
     color: #fff;
 }
@@ -287,49 +294,14 @@ footer{
 
 .footer-bottom{
     background: #18191a;
-    width: 100vw;
-    padding: 20px;
-    padding-bottom: 40px;
+    width: 100%;
     text-align: center;
 }
-.footer-bottom p{
-     float: left;
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-.footer-bottom p a{
-  color:#44bae8;
-  font-size: 16px;
-  text-decoration: none;
-}
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
-.footer-menu{
-  float: right;
 
-}
-.footer-menu ul{
-  display: flex;
-}
-.footer-menu ul li{
-padding-right: 10px;
-display: block;
-}
-.footer-menu ul li a{
-  color: #cfd2d6;
-  text-decoration: none;
-}
-.footer-menu ul li a:hover{
-  color: #27bcda;
-}
 
 @media (max-width: 576px) {
-    section {
-        padding: 75px 5%; 
+    .section{
+        padding: 75px 5%;
     }
     .footer-content{
         margin : 0 5px;
@@ -339,6 +311,15 @@ display: block;
         flex-direction: column;
         text-align: center;
         text-align: center;
+    }
+    .Home{
+        width: 100%;
+        background-image: url("./font\ banner1.jpg") !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto !important;  
+        
     }
     
     

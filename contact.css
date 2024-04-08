@@ -1,19 +1,13 @@
 *{
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
-    text-decoration:none;
-    scroll-behavior: smooth;
 }
-
 body{
-    width:100%;
-    height:auto;
+    width: 100%;
     background-color: aqua;
+    margin:0vh;
 }
-
-
 #logo{
     width: 100px;
     height: 70px;
@@ -30,39 +24,32 @@ body{
 a{
     text-decoration: none;
     padding: 20px;
-    color: white;
+    color: white !important;
 }
 a:hover{
    color: rgb(119, 225, 27);
 }
-.body1{
+.navbar-toggler{
+    background-color: white !important;
     color: white;
-    margin: 30px;
 }
-.body2{
-    text-align: center;
-    letter-spacing: 8px;
-    margin-bottom: 30px;
+.navbar-toggler-icon{
+    margin : 0 !important;
+    height: 30px;
+    width: 30px;
 }
-.body2 h1{
-    margin: 30px;
-}
-
 section{
     padding: 75px 16.7%;
 
 }
-
-
 footer{
-    
+    margin-top: 20px;
     bottom: 0;
     left: 0;
     right: 0;
     background: #212529;
     height: auto;
     width: 100vw;
-
     padding-top: 40px;
     color: #fff;
 }
@@ -117,9 +104,7 @@ footer{
 
 .footer-bottom{
     background: #18191a;
-    width: 100vw;
-    padding: 20px;
-    padding-bottom: 40px;
+    width: 100%;
     text-align: center;
 }
 .footer-bottom p{
@@ -156,6 +141,10 @@ display: block;
 .footer-menu ul li a:hover{
   color: #27bcda;
 }
+.navbar-toggler{
+    background-color: white !important;
+    color: white;
+}
 
 @media (max-width: 768px) {
     section {
@@ -165,8 +154,11 @@ display: block;
 
 
 @media (max-width: 576px) {
-    section {
-        padding: 75px 5%; 
+    .section{
+        padding: 75px 5%;
+    }
+    section{
+        padding: 75px 5%;
     }
     .footer-content{
         margin : 0 5px;

@@ -6,7 +6,7 @@
 body{
     width: 100%;
     background-color: aqua;
-    margin:0vh;
+    height: auto;
 }
 #logo{
     width: 100px;
@@ -24,29 +24,18 @@ body{
 a{
     text-decoration: none;
     padding: 20px;
-    color: white;
+    color: white !important;
 }
 a:hover{
    color: rgb(119, 225, 27);
 }
-.body1{
-    
-    margin: 30px;
-}
-.body2{
-    text-align: center;
-    letter-spacing: 8px;
-    margin-bottom: 30px;
-}
-.body2 h1{
-    margin: 30px;
-}
-.body {
+
+.term {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 25px;
 }
-.body h2 , h3{
+.term h2 , h3{
     font-weight: bold;
 
 }
@@ -138,6 +127,10 @@ footer{
 .socials a:hover i{
     color: aqua;
 }
+.navbar-toggler{
+    background-color: white !important;
+    color: white;
+}
 
 .footer-bottom{
     background: #18191a;
@@ -210,5 +203,8 @@ display: block;
     .box li a{
         color: black !important;
     }
+
+    
     
 }
+
